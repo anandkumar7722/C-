@@ -43,7 +43,26 @@ int main(){
 	  cout << "swap_num1 = :"<< swap_num1 << endl;
 	  cout <<"swap_num2 = :"<< swap_num2 << endl;
 	  cout << "After Swap ? num1 = " << swap_num1 << ", num2 = " << swap_num2 << endl;
+    // 2.11.25
+	/*
+	Rewrite the swap program without using a third variable.
+	Level 2: Type Casting & Arithmetic Practice
 
+Ask the user for distance in kilometers. Convert it to meters, centimeters, and millimeters.
+
+Input two integers and show the result of integer division and floating-point division.
+
+Write a program that takes radius and prints the area and circumference of a circle.
+
+Calculate the Body Mass Index (BMI):
+
+Input: weight (kg) and height (m)
+
+Output: BMI = weight / (height × height)
+
+Convert temperature from Celsius to Fahrenheit and vice versa.
+
+	*/
 	  
 	  
 	  
