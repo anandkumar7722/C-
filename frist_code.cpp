@@ -1,5 +1,6 @@
 #include<iostream>
 #include <string>
+#include <iomanip>
 using namespace std;
 
 int main(){
@@ -36,20 +37,20 @@ int main(){
 	  cin >> swap_num1;
 	  cout << "enter num_1";
 	  cin >> swap_num2;
-      cout << "Before Swap ? num1 = " << swap_num1 << ", num2 = " << swap_num2 << endl;
-	  swap_num1 = swap_num1+swap_num2;
-	  swap_num2 = swap_num1 - swap_num2;
-	  swap_num1 = swap_num1 - swap_num2;
-	  cout << "swap_num1 = :"<< swap_num1 << endl;
-	  cout <<"swap_num2 = :"<< swap_num2 << endl;
-	  cout << "After Swap ? num1 = " << swap_num1 << ", num2 = " << swap_num2 << endl;
+      cout << "Before Swap  num1 = " << swap_num1 << ", num2 = " << swap_num2 << endl;
+	  swap_num1 = swap_num1+swap_num2; // num1-7 = 5+2
+	  swap_num2 = swap_num1 - swap_num2; //num2_5 = 7- 2
+	  swap_num1 = swap_num1 - swap_num2;//num1_2 = 7 -5
+//	  cout << "swap_num1 = :"<< swap_num1 << endl;
+//	  cout <<"swap_num2 = :"<< swap_num2 << endl;
+	  cout << "After Swap  num1 = " << swap_num1 << ", num2 = " << swap_num2 << endl;
     // 2.11.25
 	/*
 	Rewrite the swap program without using a third variable.
 	Level 2: Type Casting & Arithmetic Practice
 
 Ask the user for distance in kilometers. Convert it to meters, centimeters, and millimeters.
-
+ 
 Input two integers and show the result of integer division and floating-point division.
 
 Write a program that takes radius and prints the area and circumference of a circle.
@@ -63,7 +64,49 @@ Output: BMI = weight / (height × height)
 Convert temperature from Celsius to Fahrenheit and vice versa.
 
 	*/
-	  
-	  
+	//Ask the user for distance in kilometers. Convert it to meters, centimeters, and millimeters.
+//	int km,meters,centimeters,millimeters;
+     double km, meters, centimeters, millimeters;
+	 cout << "enter the distance in kilometers :";
+	 cin >> km;
+	 meters = km * 1000;
+	 centimeters = km * 100000;
+	 millimeters = km * 1000000;
+	 cout << "km =" << km << endl
+	 <<"meters =" << meters << endl
+	 <<"centimeters =" << centimeters << endl
+	 << "millimeters =" << millimeters << endl
+	 << endl;	
+	 
+//Input two integers and show the result of integer division and floating-point division.
+	int valu_1 = 10,valu_2 = 20;
+	float ans = (float)valu_1/valu_2;
+	cout<<fixed<<setprecision(4);
+	cout<<ans<<endl;
+	
+//	Calculate the Body Mass Index (BMI):
+ 	float bmi,weight,height,kg;
+ 	cout << "enter weight in kg ";
+	cin >> kg;
+ 	cout << "enter height in m ";
+ 	cin >> height;
+ 	bmi = weight/(height*height);
+ 	cout<<fixed<<setprecision(4);
+ 	cout << bmi;
+ //Convert temperature from Celsius to Fahrenheit and vice versa.
+ 	float celsius,fahrenheit;
+ 	cout << "enter celsius";
+	cin >> celsius;
+	cout << "enter fahrenheit";
+	cin >> fahrenheit;
+ 	fahrenheit = (celsius * 1.8)+32;
+ 	celsius = (fahrenheit-32)/1.8;
+ 	cout << "Celsius to Fahrenheit";
+ 	cout<<fixed<<setprecision(4);
+	cout<<celsius << "F"<<endl;
+	cout << "Fahrenheit to Celsius";
+	cout<<fixed<<setprecision(4);
+	cout<<fahrenheit << "C"<<endl;
+ 	
 	  
 }
