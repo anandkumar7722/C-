@@ -95,18 +95,28 @@ Convert temperature from Celsius to Fahrenheit and vice versa.
  	cout << bmi;
  //Convert temperature from Celsius to Fahrenheit and vice versa.
  	float celsius,fahrenheit;
+	float tocelsius,tofahrenheit;
  	cout << "enter celsius";
 	cin >> celsius;
 	cout << "enter fahrenheit";
 	cin >> fahrenheit;
- 	fahrenheit = (celsius * 1.8)+32;
- 	celsius = (fahrenheit-32)/1.8;
+ 	tofahrenheit = (celsius * 1.8)+32;
+ 	tocelsius = (fahrenheit-32)/1.8;
  	cout << "Celsius to Fahrenheit";
  	cout<<fixed<<setprecision(4);
-	cout<<celsius << "F"<<endl;
+	cout<<tofahrenheit << "F"<<endl;
 	cout << "Fahrenheit to Celsius";
+	cout<<tocelsius<< "C"<<endl;
+ 	//Write a program that takes radius and prints the area and circumference of a circle.
+	float radius,area,circumference;
+	const float pi = 3.14159;
+	cout << "enter the circle radius";
+	cin >> radius;
+	circumference = (2 * (pi * radius));
+	area = (pi * (radius * radius));
 	cout<<fixed<<setprecision(4);
-	cout<<fahrenheit << "C"<<endl;
- 	
-	  
+	cout << circumference;
+	cout << area;
+
+
 }
